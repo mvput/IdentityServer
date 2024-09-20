@@ -1,7 +1,7 @@
 # Identity Server 8 update
 This project is a .NET 8 revival of the IdentityServer 4 and IdentityServer 4 Admin UI, for Open ID Connect (OIDC) and OAuth, which was archived when .NET Core 3.1 reached end of support.
 
-The latest verion, 8.0.4, is now available on NuGet. It contains [hundreds of security and bug fixes](docs/CHANGELOG.md) from the original IdentityServer 4 project.
+The latest verion, 8.0.5, is now available on NuGet. It contains [hundreds of security and bug fixes](docs/CHANGELOG.md) from the original IdentityServer 4 project.
 
 It is recommend you update all previous version, 4 or 8, to the latest version to ensure you have the latest security updates. 
 

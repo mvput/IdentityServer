@@ -3,8 +3,8 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <!--always bump /version.json and /docs/conf.py to <Version>X.Y.Z</Version>to keep nuget, build and document versions in sync-->
-        <Version>8.0.4</Version>
-		<IdentityServerVersion>8.0.4</IdentityServerVersion>
+        <Version>8.0.5</Version>
+		<IdentityServerVersion>8.0.5</IdentityServerVersion>
         <PackageId>$(MSBuildProjectName)</PackageId>
         <Title>$(MSBuildProjectName)</Title>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -21,7 +21,7 @@
         <Description>OpenID Connect and OAuth 2.0 Framework for ASP.NET Core</Description>
         <Copyright>Copyright 2024 Martijn van Put</Copyright>
         <Authors>Martijn van Put, HigginsSoft, Alexander Higgins, Brock Allen, Dominick Baier</Authors>
-  
+
         <PackageTags>OAuth2 OAuth 2.0 OpenID Connect Security Identity IdentityServer Admin IdentityServer OpenIDConnect </PackageTags>
 
 
@@ -65,7 +65,7 @@
     </PropertyGroup>
 
     <ItemGroup>
- 
+
         <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="$(MicrosoftCodeAnalysisNetAnalyzersPackageVersion)" PrivateAssets="All" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="$(MicrosoftSourceLinkGitHubPackageVersion)" PrivateAssets="All" />
     </ItemGroup>

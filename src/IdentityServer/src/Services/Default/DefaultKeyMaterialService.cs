@@ -1,12 +1,12 @@
 /*
- Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/
 
- Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
+ Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
 
- Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information. 
- Source code and license this software can be found 
+ Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
+ Source code and license this software can be found
 
  The above copyright notice and this permission notice shall be included in all
  copies or substantial portions of the Software.
@@ -30,7 +30,8 @@ public class DefaultKeyMaterialService : IKeyMaterialService
     /// </summary>
     /// <param name="validationKeysStores">The validation keys stores.</param>
     /// <param name="signingCredentialStores">The signing credential store.</param>
-    public DefaultKeyMaterialService(IEnumerable<IValidationKeysStore> validationKeysStores, IEnumerable<ISigningCredentialStore> signingCredentialStores)
+    public DefaultKeyMaterialService(IEnumerable<IValidationKeysStore> validationKeysStores,
+        IEnumerable<ISigningCredentialStore> signingCredentialStores)
     {
         _signingCredentialStores = signingCredentialStores;
         _validationKeysStores = validationKeysStores;
@@ -41,16 +42,14 @@ public class DefaultKeyMaterialService : IKeyMaterialService
     {
         if (_signingCredentialStores.Any())
         {
-            if (allowedAlgorithms.IsNullOrEmpty())
-            {
+            if (allowedAlgorithms.EnumerableIsNullOrEmpty())
                 return await _signingCredentialStores.First().GetSigningCredentialsAsync();
-            }
 
-            var credential = (await GetAllSigningCredentialsAsync()).FirstOrDefault(c => allowedAlgorithms.Contains(c.Algorithm));
+            var credential =
+                (await GetAllSigningCredentialsAsync()).FirstOrDefault(c => allowedAlgorithms.Contains(c.Algorithm));
             if (credential is null)
-            {
-                throw new InvalidOperationException($"No signing credential for algorithms ({allowedAlgorithms.ToSpaceSeparatedString()}) registered.");
-            }
+                throw new InvalidOperationException(
+                    $"No signing credential for algorithms ({allowedAlgorithms.ToSpaceSeparatedString()}) registered.");
 
             return credential;
         }
@@ -63,10 +62,7 @@ public class DefaultKeyMaterialService : IKeyMaterialService
     {
         var credentials = new List<SigningCredentials>();
 
-        foreach (var store in _signingCredentialStores)
-        {
-            credentials.Add(await store.GetSigningCredentialsAsync());
-        }
+        foreach (var store in _signingCredentialStores) credentials.Add(await store.GetSigningCredentialsAsync());
 
         return credentials;
     }
@@ -76,10 +72,7 @@ public class DefaultKeyMaterialService : IKeyMaterialService
     {
         var keys = new List<SecurityKeyInfo>();
 
-        foreach (var store in _validationKeysStores)
-        {
-            keys.AddRange(await store.GetValidationKeysAsync());
-        }
+        foreach (var store in _validationKeysStores) keys.AddRange(await store.GetValidationKeysAsync());
 
         return keys;
     }
