@@ -32,9 +32,9 @@ General speaking, the existing documentation for Identity Server 4 will be valid
 [![CI/CD|Build](https://github.com/mvput/IdentityServer/actions/workflows/pre-release.yml/badge.svg)](https://github.com/mvput/IdentityServer/actions/workflows/pre-release.yml)
 
 ## Code Coverage
-[![Master | Build](https://github.com/mvput/IdentityServer/actions/workflows/master.yml/badge.svg)](https://img.shields.io/codecov/c/github/alexhiggins732/IdentityServer) [![Master|CodeQL](https://github.com/mvput/IdentityServer/actions/workflows/codeql.yml/badge.svg)](https://github.com/mvput/IdentityServer/actions/workflows/codeql.yml)
+[![Master | Build](https://github.com/mvput/IdentityServer/actions/workflows/master.yml/badge.svg)](https://img.shields.io/codecov/c/github/mvput/IdentityServer) [![Master|CodeQL](https://github.com/mvput/IdentityServer/actions/workflows/codeql.yml/badge.svg)](https://github.com/mvput/IdentityServer/actions/workflows/codeql.yml)
 
-[![Develop|Build](https://github.com/mvput/IdentityServer/actions/workflows/develop.yml/badge.svg)](https://img.shields.io/codecov/c/github/alexhiggins732/IdentityServer/tree/develop)
+[![Develop|Build](https://github.com/mvput/IdentityServer/actions/workflows/develop.yml/badge.svg)](https://img.shields.io/codecov/c/github/mvput/IdentityServer/tree/develop)
 [![Master|CodeQL](https://github.com/mvput/IdentityServer/actions/workflows/codeql.yml/badge.svg?branch=develop)](https://github.com/mvput/IdentityServer/actions/workflows/codeql.yml?branch=develop)
 
 ## Documentation
@@ -43,7 +43,7 @@ General speaking, the existing documentation for Identity Server 4 will be valid
 
 ## Nuget Packages
 
-### Identity Server 8
+### IdentityServer 8
 |Package||
 | ------------- | ------------- |
 |[IdentityServer](https://www.nuget.org/packages?q=IdentityServer)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer)|
@@ -52,28 +52,6 @@ General speaking, the existing documentation for Identity Server 4 will be valid
 |[IdentityServer.EntityFramework.Storage](https://www.nuget.org/packages?q=IdentityServer.EntityFramework.Storage)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.EntityFramework.Storage)|
 |[IdentityServer.AspNetIdentity](https://www.nuget.org/packages?q=IdentityServer.AspNetIdentity)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.AspNetIdentity)|
 | | |
-
-### Identity Server 8 Administration UI
-|Package||
-| ------------- | ------------- |
-|[IdentityServer.Shared](https://www.nuget.org/packages?q=IdentityServer.Shared)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Shared)|
-|[IdentityServer.Admin.UI](https://www.nuget.org/packages?q=IdentityServer.Admin.UI)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.UI)|
-|[IdentityServer.Shared.Configuration](https://www.nuget.org/packages?q=IdentityServer.Shared.Configuration)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Shared.Configuration)|
-|[IdentityServer.Admin.Api](https://www.nuget.org/packages?q=IdentityServer.Admin.Api)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.Api)|
-|[IdentityServer.Admin](https://www.nuget.org/packages?q=IdentityServer.Admin)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin)|
-|[IdentityServer.Admin.BusinessLogic.Identity](https://www.nuget.org/packages?q=IdentityServer.Admin.BusinessLogic.Identity)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.BusinessLogic.Identity)|
-|[IdentityServer.Admin.EntityFramework](https://www.nuget.org/packages?q=IdentityServer.Admin.EntityFramework)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.EntityFramework)|
-|[IdentityServer.Admin.EntityFramework.Identity](https://www.nuget.org/packages?q=IdentityServer.Admin.EntityFramework.Identity)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.EntityFramework.Identity)|
-|[IdentityServer.Admin.BusinessLogic.Shared](https://www.nuget.org/packages?q=IdentityServer.Admin.BusinessLogic.Shared)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.BusinessLogic.Shared)|
-|[IdentityServer.Admin.EntityFramework.Extensions](https://www.nuget.org/packages?q=IdentityServer.Admin.EntityFramework.Extensions)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.EntityFramework.Extensions)|
-|[IdentityServer.Admin.EntityFramework.PostgreSQL](https://www.nuget.org/packages?q=IdentityServer.Admin.EntityFramework.PostgreSQL)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.EntityFramework.PostgreSQL)|
-|[IdentityServer.Admin.EntityFramework.MySql](https://www.nuget.org/packages?q=IdentityServer.Admin.EntityFramework.MySql)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.EntityFramework.MySql)|
-|[IdentityServer.Admin.EntityFramework.SqlServer](https://www.nuget.org/packages?q=IdentityServer.Admin.EntityFramework.SqlServer)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.EntityFramework.SqlServer)|
-|[IdentityServer.Admin.EntityFramework.Shared](https://www.nuget.org/packages?q=IdentityServer.Admin.EntityFramework.Shared)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.EntityFramework.Shared)|
-|[IdentityServer.Admin.BusinessLogic](https://www.nuget.org/packages?q=IdentityServer.Admin.BusinessLogic)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.BusinessLogic)|
-|[IdentityServer.Admin.EntityFramework.Configuration](https://www.nuget.org/packages?q=IdentityServer.Admin.EntityFramework.Configuration)|![NuGet Downloads](https://img.shields.io/nuget/dt/IdentityServer.Admin.EntityFramework.Configuration)|
-| | |
-
 
 ## What's New
 

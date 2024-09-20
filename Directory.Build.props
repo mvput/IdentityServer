@@ -5,7 +5,7 @@
         <!--always bump /version.json and /docs/conf.py to <Version>X.Y.Z</Version>to keep nuget, build and document versions in sync-->
         <Version>8.0.5</Version>
 		<IdentityServerVersion>8.0.5</IdentityServerVersion>
-        <PackageId>$(MSBuildProjectName)</PackageId>
+        <PackageId>Mvp.$(MSBuildProjectName)</PackageId>
         <Title>$(MSBuildProjectName)</Title>
         <ImplicitUsings>enable</ImplicitUsings>
 
