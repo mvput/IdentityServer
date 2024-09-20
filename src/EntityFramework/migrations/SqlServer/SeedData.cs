@@ -1,4 +1,6 @@
 /*
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+
  Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
@@ -10,8 +12,8 @@
  copies or substantial portions of the Software.
 */
 
-using IdentityServer8.EntityFramework.DbContexts;
-using IdentityServer8.EntityFramework.Mappers;
+using IdentityServer.EntityFramework.DbContexts;
+using IdentityServer.EntityFramework.Mappers;
 using IdentityServerHost.Configuration;
 
 namespace SqlServer;

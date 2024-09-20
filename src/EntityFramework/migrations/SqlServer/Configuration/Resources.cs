@@ -1,4 +1,6 @@
 /*
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+
  Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
@@ -11,9 +13,9 @@
 */
 
 using IdentityModel;
-using IdentityServer8.Models;
+using IdentityServer.Models;
 using System.Collections.Generic;
-using static IdentityServer8.IdentityServerConstants;
+using static IdentityServer.IdentityServerConstants;
 
 namespace IdentityServerHost.Configuration;
 

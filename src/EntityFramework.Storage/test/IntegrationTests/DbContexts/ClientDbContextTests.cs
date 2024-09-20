@@ -1,4 +1,6 @@
 /*
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+
  Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
@@ -10,14 +12,14 @@
  copies or substantial portions of the Software.
 */
 
-using IdentityServer8.EntityFramework.DbContexts;
+using IdentityServer.EntityFramework.DbContexts;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using IdentityServer8.EntityFramework.Entities;
-using IdentityServer8.EntityFramework.Options;
+using IdentityServer.EntityFramework.Entities;
+using IdentityServer.EntityFramework.Options;
 using Xunit;
 
-namespace IdentityServer8.EntityFramework.IntegrationTests.DbContexts;
+namespace IdentityServer.EntityFramework.IntegrationTests.DbContexts;
 
 public class ClientDbContextTests : IntegrationTest<ClientDbContextTests, ConfigurationDbContext, ConfigurationStoreOptions>
 {

@@ -1,4 +1,6 @@
 /*
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+
  Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
@@ -12,9 +14,9 @@
 
 #pragma warning disable 1591
 
-using IdentityServer8.Models;
+using IdentityServer.Models;
 
-namespace IdentityServer8.EntityFramework.Entities
+namespace IdentityServer.EntityFramework.Entities
 {
     public class Client
     {

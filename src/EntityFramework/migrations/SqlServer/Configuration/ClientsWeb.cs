@@ -1,4 +1,6 @@
 /*
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+
  Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
@@ -11,8 +13,8 @@
 */
 
 using System.Collections.Generic;
-using IdentityServer8;
-using IdentityServer8.Models;
+using IdentityServer;
+using IdentityServer.Models;
 
 namespace IdentityServerHost.Configuration;
 
@@ -39,7 +41,7 @@ public static class ClientsWeb
             {
                 ClientId = "js_oidc",
                 ClientName = "JavaScript OIDC Client",
-                ClientUri = "http://identityserver8.io",
+                ClientUri = "http://identityserver.io",
                 
                 AllowedGrantTypes = GrantTypes.Code,
                 RequireClientSecret = false,
@@ -91,7 +93,7 @@ public static class ClientsWeb
             {
                 ClientId = "mvc.code",
                 ClientName = "MVC Code Flow",
-                ClientUri = "http://identityserver8.io",
+                ClientUri = "http://identityserver.io",
 
                 ClientSecrets =
                 {
@@ -117,7 +119,7 @@ public static class ClientsWeb
             {
                 ClientId = "mvc.hybrid.backchannel",
                 ClientName = "MVC Hybrid (with BackChannel logout)",
-                ClientUri = "http://identityserver8.io",
+                ClientUri = "http://identityserver.io",
 
                 ClientSecrets =
                 {

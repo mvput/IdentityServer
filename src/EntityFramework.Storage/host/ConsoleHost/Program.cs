@@ -1,4 +1,6 @@
 /*
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+
  Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
@@ -16,7 +18,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        var connectionString = "server=(localdb)\\mssqllocaldb;database=IdentityServer8.EntityFramework-8.0.0;trusted_connection=yes;";
+        var connectionString = "server=(localdb)\\mssqllocaldb;database=IdentityServer.EntityFramework-8.0.0;trusted_connection=yes;";
 
         var services = new ServiceCollection();
         services.AddLogging(b => b.AddConsole().SetMinimumLevel(LogLevel.Trace));

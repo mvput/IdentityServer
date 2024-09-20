@@ -1,4 +1,6 @@
 /*
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+
  Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
@@ -11,15 +13,15 @@
 */
 
 global using IdentityModel;
-global using IdentityServer8;
-global using IdentityServer8.Configuration;
-global using IdentityServer8.Events;
-global using IdentityServer8.Extensions;
-global using IdentityServer8.Models;
-global using IdentityServer8.Services;
-global using IdentityServer8.Stores;
-global using IdentityServer8.Test;
-global using IdentityServer8.Validation;
+global using IdentityServer;
+global using IdentityServer.Configuration;
+global using IdentityServer.Events;
+global using IdentityServer.Extensions;
+global using IdentityServer.Models;
+global using IdentityServer.Services;
+global using IdentityServer.Stores;
+global using IdentityServer.Test;
+global using IdentityServer.Validation;
 global using IdentityServerHost.Configuration;
 global using IdentityServerHost.Data;
 global using Microsoft.AspNetCore.Authentication;
@@ -40,6 +42,6 @@ global using System.ComponentModel.DataAnnotations;
 global using System.Diagnostics;
 global using System.Security.Claims;
 global using System.Text;
-global using static IdentityServer8.IdentityServerConstants;
+global using static IdentityServer.IdentityServerConstants;
 global using ILogger = Microsoft.Extensions.Logging.ILogger;
 global using ClaimValueTypes = System.Security.Claims.ClaimValueTypes;

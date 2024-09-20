@@ -1,4 +1,6 @@
 /*
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+
  Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
@@ -15,7 +17,7 @@ using Microsoft.Extensions.Configuration;
 using System.Runtime.InteropServices;
 using Xunit;
 
-namespace IdentityServer8.EntityFramework.IntegrationTests;
+namespace IdentityServer.EntityFramework.IntegrationTests;
 
 /// <summary>
 /// Base class for integration tests, responsible for initializing test database providers & an xUnit class fixture

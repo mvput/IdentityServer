@@ -10,7 +10,7 @@
  copies or substantial portions of the Software.
 */
 
-using IdentityServer8;
+using IdentityServer;
 using IdentityServerHost.Quickstart.UI;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -48,7 +48,7 @@ namespace IdentityServer
                     options.SignOutScheme = IdentityServerConstants.SignoutScheme;
                     options.SaveTokens = true;
 
-                    options.Authority = "https://demo.identityserver8.io/";
+                    options.Authority = "https://demo.identityserver.io/";
                     options.ClientId = "interactive.confidential";
                     options.ClientSecret = "secret";
                     options.ResponseType = "code";

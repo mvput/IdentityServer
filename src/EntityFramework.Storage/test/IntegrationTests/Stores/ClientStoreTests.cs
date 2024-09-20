@@ -1,4 +1,6 @@
 /*
+ Copyright (c) 2024, Martijn van Put - https://github.com/mvput/ 
+
  Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
@@ -11,16 +13,16 @@
 */
 
 using FluentAssertions;
-using IdentityServer8.EntityFramework.DbContexts;
-using IdentityServer8.EntityFramework.Mappers;
-using IdentityServer8.EntityFramework.Options;
-using IdentityServer8.EntityFramework.Stores;
-using IdentityServer8.Models;
+using IdentityServer.EntityFramework.DbContexts;
+using IdentityServer.EntityFramework.Mappers;
+using IdentityServer.EntityFramework.Options;
+using IdentityServer.EntityFramework.Stores;
+using IdentityServer.Models;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 using Xunit.Sdk;
 
-namespace IdentityServer8.EntityFramework.IntegrationTests.Stores;
+namespace IdentityServer.EntityFramework.IntegrationTests.Stores;
 
 public class ClientStoreTests : IntegrationTest<ClientStoreTests, ConfigurationDbContext, ConfigurationStoreOptions>
 {
